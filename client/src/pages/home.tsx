@@ -116,7 +116,7 @@ export default function Home() {
                     </div>
                   </div>
                 ))
-              ) : featuredProducts && featuredProducts.length > 0 ? (
+              ) : Array.isArray(featuredProducts) && featuredProducts.length > 0 ? (
                 featuredProducts.slice(0, 4).map((product: any) => (
                   <ProductCard key={product.id} product={product} />
                 ))

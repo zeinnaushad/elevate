@@ -48,9 +48,11 @@ export default function Products() {
   
   // Debug what data is being returned
   console.log("Products data:", products, "Category:", category);
+  console.log("API URL:", buildQueryString());
   
-  // Refetch when filters change
+  // Refetch when filters change or category changes
   useEffect(() => {
+    console.log("Filter changed or category changed, refetching...");
     refetch();
   }, [category, filters.search, refetch]);
   
@@ -67,7 +69,7 @@ export default function Products() {
   const availableSizes = ["XS", "S", "M", "L", "XL"];
   
   // Filter products client-side for price and other filters not implemented in API
-  const filteredProducts = products?.filter((product: any) => {
+  const filteredProducts = Array.isArray(products) ? products.filter((product: any) => {
     const price = product.discountPrice || product.price;
     const matchesPrice = price >= filters.priceRange[0] && price <= filters.priceRange[1];
     
@@ -80,7 +82,7 @@ export default function Products() {
         filters.sizes.includes(size)));
     
     return matchesPrice && matchesColor && matchesSize;
-  });
+  }) : [];
   
   // Sort products
   const sortedProducts = filteredProducts ? [...filteredProducts].sort((a: any, b: any) => {
