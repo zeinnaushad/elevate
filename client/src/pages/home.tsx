@@ -31,7 +31,7 @@ export default function Home() {
         <section className="relative h-[80vh] overflow-hidden">
           <div className="absolute inset-0 bg-black">
             <img 
-              src="https://images.unsplash.com/photo-1519412849983-957822373d02?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080&q=80" 
+              src="/attached_assets/Frilled mini White Dress.jpeg" 
               alt="Fashion model in elegant outfit" 
               className="object-cover w-full h-full opacity-80" 
             />
@@ -40,7 +40,7 @@ export default function Home() {
           <div className="container mx-auto px-4 h-full flex items-end pb-20 relative z-10">
             <div className="max-w-lg">
               <h1 className="font-montserrat text-4xl md:text-5xl lg:text-6xl font-light text-foreground leading-tight">
-                Autumn <span className="font-medium">Collection</span> <span className="text-accent">2023</span>
+                Autumn <span className="font-medium">Collection</span> <span className="text-accent">2025</span>
               </h1>
               <p className="text-foreground/80 mt-4 mb-8 text-lg">
                 Discover our latest collection featuring sophisticated silhouettes and premium fabrics.
@@ -69,17 +69,17 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <CategoryCard 
                 title="Women" 
-                image="https://images.unsplash.com/photo-1528812969535-4bcefc071532?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=1000&q=80" 
+                image="/attached_assets/Sweet Pink Flare Sleeve Dress.jpeg" 
                 link="/products/women" 
               />
               <CategoryCard 
                 title="Men" 
-                image="https://images.unsplash.com/photo-1513269890889-8e4e362e5593?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=1000&q=80" 
+                image="/attached_assets/Abercrombie's $50 Knit Polo Shirts Have No….jpeg" 
                 link="/products/men" 
               />
               <CategoryCard 
                 title="Accessories" 
-                image="https://pixabay.com/get/g6432630312a8a7c30ae9add9fc11c121f9c754237df00ccd27e89fddfd43d0c6dd45d49b6133d2abe03a8cc381241ba7414e93692498433f6475b219c3359748_1280.jpg" 
+                image="/attached_assets/Oxidized silver layered necklace.jpeg"
                 link="/products/accessories" 
               />
             </div>
