@@ -17,7 +17,7 @@ export default function Products() {
   const category = params.category;
   
   const [filters, setFilters] = useState({
-    priceRange: [0, 200],
+    priceRange: [0, 5000], // Increasing the price range to accommodate our products that are in rupees
     search: "",
     sortBy: "featured",
     colors: [] as string[],
@@ -49,6 +49,7 @@ export default function Products() {
   // Debug what data is being returned
   console.log("Products data:", products, "Category:", category);
   console.log("API URL:", buildQueryString());
+  console.log("Price range:", filters.priceRange);
   
   // Refetch when filters change or category changes
   useEffect(() => {
@@ -169,17 +170,17 @@ export default function Products() {
               <div>
                 <h3 className="text-lg font-medium mb-4">Price Range</h3>
                 <Slider
-                  defaultValue={[0, 200]}
+                  defaultValue={[0, 5000]}
                   min={0}
-                  max={200}
-                  step={10}
+                  max={5000}
+                  step={500}
                   value={filters.priceRange}
                   onValueChange={(value) => setFilters(prev => ({ ...prev, priceRange: value }))}
                   className="mb-2"
                 />
                 <div className="flex justify-between text-sm text-muted-foreground">
-                  <span>${filters.priceRange[0]}</span>
-                  <span>${filters.priceRange[1]}</span>
+                  <span>₹{filters.priceRange[0]}</span>
+                  <span>₹{filters.priceRange[1]}</span>
                 </div>
               </div>
               
@@ -221,7 +222,7 @@ export default function Products() {
               <Button
                 variant="outline"
                 onClick={() => setFilters({
-                  priceRange: [0, 200],
+                  priceRange: [0, 5000],
                   search: "",
                   sortBy: "featured",
                   colors: [],
