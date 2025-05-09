@@ -46,6 +46,9 @@ export default function Products() {
     queryKey: [buildQueryString()],
   });
   
+  // Debug what data is being returned
+  console.log("Products data:", products, "Category:", category);
+  
   // Refetch when filters change
   useEffect(() => {
     refetch();

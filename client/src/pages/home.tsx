@@ -16,6 +16,9 @@ export default function Home() {
     queryKey: ["/api/products?featured=true"],
   });
   
+  // Debug what data is being returned
+  console.log("Featured Products:", featuredProducts);
+  
   const handleNewsletter = (e: React.FormEvent) => {
     e.preventDefault();
     alert(`Thank you for subscribing with ${email}!`);
@@ -113,10 +116,18 @@ export default function Home() {
                     </div>
                   </div>
                 ))
-              ) : (
-                featuredProducts?.slice(0, 4).map((product: any) => (
+              ) : featuredProducts && featuredProducts.length > 0 ? (
+                featuredProducts.slice(0, 4).map((product: any) => (
                   <ProductCard key={product.id} product={product} />
                 ))
+              ) : (
+                <div className="lg:col-span-4 flex flex-col items-center justify-center h-96">
+                  <i className="ri-shopping-bag-line text-5xl text-muted mb-4"></i>
+                  <h3 className="text-xl font-medium mb-2">No featured products found</h3>
+                  <p className="text-muted-foreground text-center">
+                    Check out our product catalog to see all available items.
+                  </p>
+                </div>
               )}
             </div>
             
