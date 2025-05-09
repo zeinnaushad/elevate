@@ -92,14 +92,14 @@ export class MemStorage implements IStorage {
       lastName: "User"
     });
     
-    // Initialize with women's products (first 7 images)
+    // WOMEN'S CATEGORY - FIRST 7 IMAGES ALPHABETICALLY
     this.createProduct({
-      name: "Sweet Pink Flare Sleeve Dress",
-      description: "This elegant dress features a flattering silhouette with delicate flare sleeves in a beautiful sweet pink. Perfect for special occasions.",
+      name: "Abercrombie Flare Sleeve Dress",
+      description: "Elegant flare sleeve dress with a beautiful design and comfortable fit.",
       price: 2499,
       category: "women",
       imageUrls: [
-        "/attached_assets/Sweet Pink Flare Sleeve Dress.jpeg"
+        "/attached_assets/Abercrombie's $50 Knit Polo Shirts Have No….jpeg"
       ],
       sizes: ["XS", "S", "M", "L"],
       colors: ["Pink", "White"],
@@ -110,51 +110,35 @@ export class MemStorage implements IStorage {
     });
     
     this.createProduct({
-      name: "Pastel Blue Chiffon Dress",
-      description: "Elegant pastel blue chiffon dress perfect for summer events and garden parties.",
+      name: "Antique Style Dress",
+      description: "Beautiful vintage-inspired dress with antique detailing perfect for special occasions.",
       price: 2899,
       category: "women",
       imageUrls: [
-        "/attached_assets/Pastel Blue Chiffon Dress.jpeg"
+        "/attached_assets/Antique pendant necklace.jpeg"
       ],
       sizes: ["S", "M", "L", "XL"],
-      colors: ["Blue"],
+      colors: ["Gold", "Bronze"],
       featured: true,
       sku: "WD-F2023-002",
-      material: "100% Chiffon",
-      tags: ["dress", "pastel", "summer"]
+      material: "Premium Blend",
+      tags: ["dress", "vintage", "special occasion"]
     });
     
     this.createProduct({
-      name: "Off Shoulder Brown Full Sleeved Top",
-      description: "Stylish off-shoulder top with full sleeves in rich brown, perfect for casual outings or date nights.",
-      price: 1499,
+      name: "Strappy Summer Dress",
+      description: "Light and airy summer dress with pretty straps, perfect for warm weather occasions.",
+      price: 1899,
       category: "women",
       imageUrls: [
-        "/attached_assets/Off Shoulder Brown Full sleeved Top.jpeg"
+        "/attached_assets/Best Sellers – Pretty Straps™.jpeg"
       ],
       sizes: ["XS", "S", "M", "L"],
-      colors: ["Brown"],
-      featured: true,
-      sku: "WT-F2023-003",
-      material: "95% Cotton, 5% Elastane",
-      tags: ["top", "casual", "off-shoulder"]
-    });
-    
-    this.createProduct({
-      name: "Turned Down Collar Fitted Top",
-      description: "Classic fitted top with turned down collar, perfect for office wear or semi-formal occasions.",
-      price: 1299,
-      category: "women",
-      imageUrls: [
-        "/attached_assets/Turned down collar fitted top.jpeg"
-      ],
-      sizes: ["S", "M", "L"],
-      colors: ["White"],
+      colors: ["Pink", "White"],
       featured: false,
-      sku: "WT-F2023-004",
-      material: "80% Cotton, 20% Polyester",
-      tags: ["top", "formal", "office wear"]
+      sku: "WD-F2023-003",
+      material: "95% Cotton, 5% Elastane",
+      tags: ["dress", "summer", "strappy"]
     });
     
     this.createProduct({
@@ -168,9 +152,41 @@ export class MemStorage implements IStorage {
       sizes: ["XS", "S", "M"],
       colors: ["Blue"],
       featured: false,
-      sku: "WT-F2023-005",
+      sku: "WT-F2023-004",
       material: "100% Cotton",
       tags: ["tee", "casual", "printed"]
+    });
+    
+    this.createProduct({
+      name: "Pink Coquette Dress",
+      description: "Adorable pink coquette dress with feminine details, perfect for creating a sweet look.",
+      price: 1999,
+      category: "women",
+      imageUrls: [
+        "/attached_assets/Coquette Baby Pink purse.jpeg"
+      ],
+      sizes: ["XS", "S", "M"],
+      colors: ["Pink"],
+      featured: true,
+      sku: "WD-F2023-005",
+      material: "Premium Blend",
+      tags: ["dress", "coquette", "pink"]
+    });
+    
+    this.createProduct({
+      name: "Contemporary Fashion Dress",
+      description: "Modern dress with contemporary styling and premium design elements.",
+      price: 1799,
+      category: "women",
+      imageUrls: [
+        "/attached_assets/EHHiwRJk.jpeg"
+      ],
+      sizes: ["S", "M", "L"],
+      colors: ["Blue", "Gray"],
+      featured: false,
+      sku: "WD-F2023-006",
+      material: "Premium Blend",
+      tags: ["dress", "contemporary", "premium"]
     });
     
     this.createProduct({
@@ -185,42 +201,58 @@ export class MemStorage implements IStorage {
       sizes: ["XS", "S", "M", "L", "XL"],
       colors: ["White"],
       featured: true,
-      sku: "WD-F2023-006",
+      sku: "WD-F2023-007",
       material: "95% Cotton, 5% Elastane",
       tags: ["dress", "mini", "elegant"]
     });
     
+    // MEN'S CATEGORY - NEXT 7 IMAGES ALPHABETICALLY
     this.createProduct({
-      name: "Hulianfu Chiffon Dress",
-      description: "Beautiful chiffon dress with elegant flowing design, perfect for formal events and celebrations.",
-      price: 3499,
-      category: "women",
+      name: "Designer Men's Fashion",
+      description: "Premium designer men's fashion item with unique styling and high-quality construction.",
+      price: 2299,
+      category: "men",
+      imageUrls: [
+        "/attached_assets/ge3QeqRu.jpeg"
+      ],
+      sizes: ["M", "L", "XL"],
+      colors: ["Black", "Gold"],
+      featured: true,
+      sku: "MF-F2023-008",
+      material: "Premium Materials",
+      tags: ["designer", "premium", "men's fashion"]
+    });
+    
+    this.createProduct({
+      name: "SHEIN Men's Collection",
+      description: "Stylish item from the SHEIN men's collection featuring modern design elements.",
+      price: 1599,
+      category: "men",
+      imageUrls: [
+        "/attached_assets/[goods_name] _ SHEIN USA.jpeg"
+      ],
+      sizes: ["S", "M", "L"],
+      colors: ["Black", "Silver"],
+      featured: false,
+      sku: "MC-F2023-009",
+      material: "Premium Blend",
+      tags: ["shein", "modern", "men's collection"]
+    });
+    
+    this.createProduct({
+      name: "Hulianfu Men's Shirt",
+      description: "Stylish men's shirt from Hulianfu featuring excellent craftsmanship and premium fabric.",
+      price: 1899,
+      category: "men",
       imageUrls: [
         "/attached_assets/Hulianfu Chiffon Dress for Women.jpeg"
       ],
-      sizes: ["S", "M", "L"],
-      colors: ["Pink", "White"],
+      sizes: ["M", "L", "XL"],
+      colors: ["White", "Pink"],
       featured: true,
-      sku: "WD-F2023-007",
-      material: "100% Chiffon",
-      tags: ["dress", "chiffon", "formal"]
-    });
-    
-    // Initialize with men's products (next 6 images)
-    this.createProduct({
-      name: "Retro Washed Printed T-Shirt",
-      description: "Vintage-inspired printed t-shirt with a comfortable fit and distressed details for an authentic look.",
-      price: 1299,
-      category: "men",
-      imageUrls: [
-        "/attached_assets/Men_s Retro Washed Printed T-Shirt-Retro Washed….jpeg"
-      ],
-      sizes: ["S", "M", "L", "XL"],
-      colors: ["Gray", "Black"],
-      featured: true,
-      sku: "MT-F2023-008",
-      material: "100% Cotton",
-      tags: ["t-shirt", "vintage", "casual"]
+      sku: "MS-F2023-010",
+      material: "Premium Fabric",
+      tags: ["shirt", "premium", "hulianfu"]
     });
     
     this.createProduct({
@@ -234,77 +266,61 @@ export class MemStorage implements IStorage {
       sizes: ["M", "L", "XL"],
       colors: ["Black"],
       featured: false,
-      sku: "MS-F2023-009",
+      sku: "MS-F2023-011",
       material: "95% Cotton, 5% Elastane",
       tags: ["shirt", "long sleeve", "casual"]
     });
     
     this.createProduct({
-      name: "Abercrombie Knit Polo Shirt",
-      description: "Premium knit polo shirt with a comfortable fit and classic design.",
+      name: "Retro Washed Printed T-Shirt",
+      description: "Vintage-inspired printed t-shirt with a comfortable fit and distressed details for an authentic look.",
+      price: 1299,
+      category: "men",
+      imageUrls: [
+        "/attached_assets/Men_s Retro Washed Printed T-Shirt-Retro Washed….jpeg"
+      ],
+      sizes: ["S", "M", "L", "XL"],
+      colors: ["Gray", "Black"],
+      featured: true,
+      sku: "MT-F2023-012",
+      material: "100% Cotton",
+      tags: ["t-shirt", "vintage", "casual"]
+    });
+    
+    this.createProduct({
+      name: "Designer Eyewear for Men",
+      description: "High-quality designer eyewear for men with stylish frames and UV protection.",
       price: 2499,
       discountPrice: 1999,
       category: "men",
       imageUrls: [
-        "/attached_assets/Abercrombie's $50 Knit Polo Shirts Have No….jpeg"
+        "/attached_assets/MULTIOPTIC SUNGLASSES & EYEWEAR on Instagram….jpeg"
       ],
-      sizes: ["S", "M", "L", "XL"],
-      colors: ["Navy", "Gray"],
+      sizes: ["One Size"],
+      colors: ["Black", "Brown"],
       featured: true,
-      sku: "MP-F2023-010",
-      material: "100% Cotton Knit",
-      tags: ["polo", "knit", "casual"]
+      sku: "ME-F2023-013",
+      material: "Premium Materials",
+      tags: ["eyewear", "designer", "UV protection"]
     });
     
     this.createProduct({
-      name: "Men's Designer Shirt",
-      description: "Stylish men's designer shirt with attention to detail and premium quality fabric.",
-      price: 2299,
+      name: "Brown Casual Shirt",
+      description: "Stylish brown casual shirt with a modern fit and comfortable design.",
+      price: 1699,
       category: "men",
       imageUrls: [
-        "/attached_assets/S7DlfM7D.jpeg"
+        "/attached_assets/Off Shoulder Brown Full sleeved Top.jpeg"
       ],
       sizes: ["M", "L", "XL"],
-      colors: ["White", "Black"],
+      colors: ["Brown"],
       featured: false,
-      sku: "MS-F2023-011",
-      material: "100% Cotton",
-      tags: ["shirt", "designer", "formal"]
+      sku: "MS-F2023-014",
+      material: "95% Cotton, 5% Elastane",
+      tags: ["shirt", "casual", "brown"]
     });
     
-    this.createProduct({
-      name: "Men's Summer Collection Shirt",
-      description: "Light and breathable shirt perfect for summer, featuring a modern design.",
-      price: 1599,
-      category: "men",
-      imageUrls: [
-        "/attached_assets/SaQdaxhE.jpeg"
-      ],
-      sizes: ["S", "M", "L"],
-      colors: ["Blue", "White"],
-      featured: true,
-      sku: "MS-F2023-012",
-      material: "80% Cotton, 20% Linen",
-      tags: ["shirt", "summer", "casual"]
-    });
-    
-    this.createProduct({
-      name: "Men's Casual Shirt",
-      description: "Versatile casual shirt that can be dressed up or down for various occasions.",
-      price: 1799,
-      category: "men",
-      imageUrls: [
-        "/attached_assets/EHHiwRJk.jpeg"
-      ],
-      sizes: ["M", "L", "XL"],
-      colors: ["Blue", "Gray"],
-      featured: false,
-      sku: "MS-F2023-013",
-      material: "100% Cotton",
-      tags: ["shirt", "casual", "versatile"]
-    });
-    
-    // Initialize with accessories (remaining images)
+    // ACCESSORIES CATEGORY - REMAINING IMAGES
     this.createProduct({
       name: "Oxidized Silver Layered Necklace",
       description: "Elegant oxidized silver layered necklace that adds sophistication to any outfit.",
@@ -316,106 +332,89 @@ export class MemStorage implements IStorage {
       sizes: [],
       colors: ["Silver"],
       featured: true,
-      sku: "AC-F2023-014",
+      sku: "AC-F2023-015",
       material: "Oxidized Silver",
       tags: ["necklace", "silver", "jewelry"]
     });
     
     this.createProduct({
-      name: "Antique Pendant Necklace",
-      description: "Beautiful antique-style pendant necklace with intricate detailing.",
-      price: 1499,
+      name: "Pastel Blue Fashion Accessory",
+      description: "Beautiful pastel blue accessory to complement your fashion style.",
+      price: 999,
       category: "accessories",
       imageUrls: [
-        "/attached_assets/Antique pendant necklace.jpeg"
+        "/attached_assets/Pastel Blue Chiffon Dress.jpeg"
       ],
       sizes: [],
-      colors: ["Gold", "Bronze"],
-      featured: true,
-      sku: "AC-F2023-015",
-      material: "Mixed Metal",
-      tags: ["necklace", "pendant", "antique"]
+      colors: ["Blue"],
+      featured: false,
+      sku: "AC-F2023-016",
+      material: "Premium Materials",
+      tags: ["accessory", "pastel", "blue"]
     });
     
     this.createProduct({
-      name: "Coquette Baby Pink Purse",
-      description: "Adorable baby pink purse with coquette style, perfect for adding a feminine touch to any outfit.",
-      price: 1999,
+      name: "Designer Men's Accessory",
+      description: "Stylish men's fashion accessory with premium design elements.",
+      price: 1399,
       category: "accessories",
       imageUrls: [
-        "/attached_assets/Coquette Baby Pink purse.jpeg"
+        "/attached_assets/S7DlfM7D.jpeg"
+      ],
+      sizes: [],
+      colors: ["Black", "White"],
+      featured: true,
+      sku: "AC-F2023-017",
+      material: "Premium Materials",
+      tags: ["accessory", "men's", "designer"]
+    });
+    
+    this.createProduct({
+      name: "Summer Collection Accessory",
+      description: "Light and stylish accessory perfect for completing your summer looks.",
+      price: 1199,
+      category: "accessories",
+      imageUrls: [
+        "/attached_assets/SaQdaxhE.jpeg"
+      ],
+      sizes: [],
+      colors: ["Blue", "White"],
+      featured: false,
+      sku: "AC-F2023-018",
+      material: "Mixed Materials",
+      tags: ["accessory", "summer", "stylish"]
+    });
+    
+    this.createProduct({
+      name: "Classic Fashion Scarf",
+      description: "Elegant lightweight scarf in sweet pink design, perfect for any season.",
+      price: 1499,
+      category: "accessories",
+      imageUrls: [
+        "/attached_assets/Sweet Pink Flare Sleeve Dress.jpeg"
       ],
       sizes: [],
       colors: ["Pink"],
       featured: true,
-      sku: "AC-F2023-016",
-      material: "Vegan Leather",
-      tags: ["purse", "pink", "coquette"]
+      sku: "AC-F2023-019",
+      material: "Premium Fabric",
+      tags: ["scarf", "classic", "pink"]
     });
     
     this.createProduct({
-      name: "Pretty Straps Accessory",
-      description: "Versatile straps accessory that can be used to enhance various outfits and styles.",
+      name: "Collar Fashion Accessory",
+      description: "Stylish collar accessory to upgrade your outfit with a touch of elegance.",
       price: 899,
       category: "accessories",
       imageUrls: [
-        "/attached_assets/Best Sellers – Pretty Straps™.jpeg"
+        "/attached_assets/Turned down collar fitted top.jpeg"
       ],
       sizes: [],
-      colors: ["Black", "White", "Pink"],
-      featured: false,
-      sku: "AC-F2023-017",
-      material: "Mixed Materials",
-      tags: ["straps", "accessory", "versatile"]
-    });
-    
-    this.createProduct({
-      name: "Designer Sunglasses",
-      description: "Stylish designer sunglasses with UV protection and modern frame design.",
-      price: 2499,
-      discountPrice: 1999,
-      category: "accessories",
-      imageUrls: [
-        "/attached_assets/MULTIOPTIC SUNGLASSES & EYEWEAR on Instagram….jpeg"
-      ],
-      sizes: [],
-      colors: ["Black", "Brown"],
-      featured: true,
-      sku: "AC-F2023-018",
-      material: "Metal Frame, Polarized Glass",
-      tags: ["sunglasses", "eyewear", "designer"]
-    });
-    
-    this.createProduct({
-      name: "Classic Fashion Accessory",
-      description: "Timeless classic accessory that complements various styles and outfits.",
-      price: 1299,
-      category: "accessories",
-      imageUrls: [
-        "/attached_assets/ge3QeqRu.jpeg"
-      ],
-      sizes: [],
-      colors: ["Black", "Gold"],
-      featured: false,
-      sku: "AC-F2023-019",
-      material: "Mixed Materials",
-      tags: ["accessory", "classic", "fashion"]
-    });
-    
-    this.createProduct({
-      name: "SHEIN Designer Accessory",
-      description: "Trendy designer accessory from SHEIN, perfect for completing your stylish look.",
-      price: 999,
-      category: "accessories",
-      imageUrls: [
-        "/attached_assets/[goods_name] _ SHEIN USA.jpeg"
-      ],
-      sizes: [],
-      colors: ["Silver", "Gold"],
+      colors: ["White"],
       featured: false,
       sku: "AC-F2023-020",
-      material: "Mixed Materials",
-      tags: ["accessory", "designer", "trendy"]
+      material: "Premium Fabric",
+      tags: ["collar", "accessory", "elegant"]
     });
   }
 
